@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel & Explore</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: #0073e6;
+            color: white;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .menu {
+            display: flex;
+            gap: 1rem;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .menu a:hover {
+            text-decoration: underline;
+        }
+        .hamburger {
+            display: none;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        .content {
+            margin-top: 80px;
+            width: 90%;
+            max-width: 1200px;
+        }
+        @media (max-width: 768px) {
+            .menu {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background: #0073e6;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                padding: 1rem;
+            }
+            .menu.active {
+                display: flex;
+            }
+            .hamburger {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Travel & Explore</div>
+        <div class="hamburger">&#9776;</div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="destination.html">Destinations</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <div class="content">
+        <header class="header">
+            <h1>Welcome to Travel & Explore</h1>
+            <p>Your gateway to unforgettable adventures</p>
+        </header>
+        <section>
+            <h2>Discover the World</h2>
+            <p>Navigate through our menu to explore destinations, services, and more!</p>
+        </section>
+    </div>
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
