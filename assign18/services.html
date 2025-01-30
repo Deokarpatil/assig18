@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Travel & Explore</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f9;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: #0073e6;
+            color: white;
+        }
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .navbar .menu {
+            display: flex;
+            gap: 1rem;
+        }
+        .navbar .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .navbar .menu a:hover {
+            text-decoration: underline;
+        }
+        .header {
+            padding: 2rem;
+            text-align: center;
+            background: #e0f7fa;
+            color: #0073e6;
+        }
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .header p {
+            font-size: 1rem;
+        }
+        .services {
+            padding: 2rem;
+            text-align: center;
+        }
+        .services h2 {
+            font-size: 1.8rem;
+            color: #0073e6;
+            margin-bottom: 1rem;
+        }
+        .services .service-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        .service-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .service-card h3 {
+            font-size: 1.4rem;
+            color: #0073e6;
+            margin-bottom: 0.5rem;
+        }
+        .service-card p {
+            font-size: 1rem;
+            color: #555;
+        }
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .navbar .menu {
+                flex-direction: column;
+                gap: 0.5rem;
+                width: 100%;
+            }
+            .header h1 {
+                font-size: 1.5rem;
+            }
+            .header p {
+                font-size: 0.9rem;
+            }
+            .services .service-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Travel & Explore</div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="destination.html">Destinations</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <header class="header">
+        <h1>Our Services</h1>
+        <p>Explore the services we offer to make your travel experience seamless.</p>
+    </header>
+    <section class="services">
+        <h2>What We Offer</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <h3>Travel Consultation</h3>
+                <p>Personalized advice to help you plan your perfect trip, from destinations to itineraries.</p>
+            </div>
+            <div class="service-card">
+                <h3>Guided Tours</h3>
+                <p>Join our expert guides on immersive tours to explore the best local attractions.</p>
+            </div>
+            <div class="service-card">
+                <h3>Accommodation Booking</h3>
+                <p>Find and book top-rated hotels, resorts, and vacation homes tailored to your needs.</p>
+            </div>
+            <div class="service-card">
+                <h3>Travel Insurance</h3>
+                <p>Secure peace of mind with comprehensive travel insurance for your entire journey.</p>
+            </div>
+            <div class="service-card">
+                <h3>Flight Assistance</h3>
+                <p>Get help booking flights, finding the best deals, and making travel arrangements.</p>
+            </div>
+            <div class="service-card">
+                <h3>Adventure Activities</h3>
+                <p>Book exciting activities like hiking, snorkeling, and cultural experiences for every type of traveler.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

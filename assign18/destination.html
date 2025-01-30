@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Travel & Explore</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f9;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: #0073e6;
+            color: white;
+        }
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .navbar .menu {
+            display: flex;
+            gap: 1rem;
+        }
+        .navbar .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .navbar .menu a:hover {
+            text-decoration: underline;
+        }
+        .header {
+            padding: 2rem;
+            text-align: center;
+            background: #e0f7fa;
+            color: #0073e6;
+        }
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .header p {
+            font-size: 1rem;
+        }
+        .destinations {
+            padding: 2rem;
+            text-align: center;
+        }
+        .destinations h2 {
+            font-size: 1.8rem;
+            color: #0073e6;
+            margin-bottom: 1rem;
+        }
+        .destinations .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+            text-align: center;
+            padding: 1rem;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card h3 {
+            font-size: 1.2rem;
+            color: #0073e6;
+            margin: 0.5rem 0;
+        }
+        .card p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .navbar .menu {
+                flex-direction: column;
+                gap: 0.5rem;
+                width: 100%;
+            }
+            .header h1 {
+                font-size: 1.5rem;
+            }
+            .header p {
+                font-size: 0.9rem;
+            }
+            .destinations .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Travel & Explore</div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="destination.html">Destinations</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <header class="header">
+        <h1>Explore Destinations</h1>
+        <p>Find your next adventure with our curated destinations</p>
+    </header>
+    <section class="destinations">
+        <h2>Top Picks</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="/img/download.jpg" alt="Paris">
+                <h3>Paris, France</h3>
+                <p>Experience the charm of the city of love and lights.</p>
+            </div>
+            <div class="card">
+                <img src="/img/bali.jpg" alt="Bali">
+                <h3>Bali, Indonesia</h3>
+                <p>Relax on pristine beaches surrounded by lush greenery.</p>
+            </div>
+            <div class="card">
+                <img src="/img/newyork.jpg" alt="New York">
+                <h3>New York, USA</h3>
+                <p>Explore the vibrant culture of the city that never sleeps.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

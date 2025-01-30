@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Travel & Explore</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f9;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: #0073e6;
+            color: white;
+        }
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .navbar .menu {
+            display: flex;
+            gap: 1rem;
+        }
+        .navbar .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .navbar .menu a:hover {
+            text-decoration: underline;
+        }
+        .header {
+            padding: 2rem;
+            text-align: center;
+            background: #e0f7fa;
+            color: #0073e6;
+        }
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .header p {
+            font-size: 1rem;
+        }
+        .about {
+            padding: 2rem;
+            text-align: center;
+        }
+        .about h2 {
+            font-size: 1.8rem;
+            color: #0073e6;
+            margin-bottom: 1rem;
+        }
+        .about p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+        .about img {
+            width: 100%;
+            height: auto;
+            max-width: 600px;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .navbar .menu {
+                flex-direction: column;
+                gap: 0.5rem;
+                width: 100%;
+            }
+            .header h1 {
+                font-size: 1.5rem;
+            }
+            .header p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Travel & Explore</div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="destination.html">Destinations</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <header class="header">
+        <h1>About Us</h1>
+        <p>Learn more about our mission and team</p>
+    </header>
+    <section class="about">
+        <h2>Our Mission</h2>
+        <p>At Travel & Explore, we believe in creating unforgettable travel experiences. Our mission is to provide you with the best recommendations, tips, and resources to make your adventures truly special. Whether you're looking to explore new destinations or need travel advice, we are here to inspire and guide you every step of the way.</p>
+        <img src="/img/about.jpg" alt="Travel">
+        <h2>Our Team</h2>
+        <p>Our team is made up of passionate travelers, expert curators, and experienced travel writers who are dedicated to bringing you the most exciting and comprehensive travel content. Together, we work to offer you a wide variety of travel destinations, activities, and helpful tips to enhance your journey.</p>
+    </section>
+</body>
+</html>
